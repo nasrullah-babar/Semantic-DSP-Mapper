@@ -21,4 +21,12 @@ api.upload_folder(
     token=token
 )
 
+print("uploading checkpoints...")
+api.upload_folder(
+    folder_path="outputs",
+    repo_id=repo_id,
+    path_in_repo="outputs",
+    token=token
+)
+
 print("model is up.")
